@@ -23,18 +23,20 @@ let abbottConfig = {
     .forEach(function (element) {
       let oldHtml = element.innerHTML;
       element.innerHTML = abbreviate(parseInt(oldHtml));
-      if (abbottConfig.unabbreviatedVerTooltip) element.setAttribute("title", oldHtml);
+      if (abbottConfig.unabbreviatedVerTooltip)
+        element.setAttribute("title", oldHtml);
     });
 
-    if (abbottConfig.hasDynamicElements) {
-      setInterval(function() {
+  if (abbottConfig.hasDynamicElements) {
+    setInterval(function () {
       document
-      .getElementsByClassName("abbott--abbreviate")
-      .forEach(function (element) {
-        let oldHtml = element.innerHTML;
-        element.innerHTML = abbreviate(parseInt(oldHtml));
-        if (abbottConfig.unabbreviatedVerTooltip) element.setAttribute("title", oldHtml);
-      });
+        .getElementsByClassName("abbott--abbreviate")
+        .forEach(function (element) {
+          let oldHtml = element.innerHTML;
+          element.innerHTML = abbreviate(parseInt(oldHtml));
+          if (abbottConfig.unabbreviatedVerTooltip)
+            element.setAttribute("title", oldHtml);
+        });
     }, 2000);
   }
 })();
