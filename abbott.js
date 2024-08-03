@@ -2,6 +2,7 @@
 let abbottConfig = {
   unabbreviatedVerTooltip: true,
   hasDynamicElements: false,
+  dynamicElementsInterval: 0,
 };
 
 (function () {
@@ -37,6 +38,6 @@ let abbottConfig = {
           if (abbottConfig.unabbreviatedVerTooltip)
             element.setAttribute("title", oldHtml);
         });
-    }, 2000);
+    }, abbottConfig.dynamicElementsInterval);
   }
 })();
