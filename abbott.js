@@ -2,7 +2,7 @@
 let abbottConfig = {
   unabbreviatedVerTooltip: true,
   hasDynamicElements: false,
-  dynamicElementsInterval: 0,
+  dynamicElementsInterval: 2000,
 };
 
 (function () {
