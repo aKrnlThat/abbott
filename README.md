@@ -38,3 +38,6 @@ All configurations are in the global object `abbottConfig`. Here's the structure
 
 ### Usage within HTML
 Any elements with JUST a number (add a span for the actual number if you have a suffix after the number) and the class `abbott-abbreviate` will be abbreviated!
+
+## Contributors in the last year
+* [aKrnlThat](https://github.com/aKrnlThat) - Owner
