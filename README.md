@@ -2,6 +2,8 @@
 
 A simple JavaScript abbreviation library for numbers in HTML.
 
+***From `219,000,000` to `219M` - keeps it clean!***
+
 ## Use
 
 ### Install
